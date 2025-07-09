@@ -13,8 +13,14 @@ Tecnologie utilizzate
 - RESTful API per l’esposizione dei dati in formato JSON
 
 Configurazione
-- Clona il progetto: https://github.com/matteo-mazzoni/meteo-api
-- Avvia l'applicazione: mvn spring-boot:run
-- Compila l'applicazione: mvnw clean package
+- Clona il progetto: 
+    https://github.com/matteo-mazzoni/meteo-api
+    cd meteo-api
+- Costruisci l'immagine docker: 
+    docker build -t meteo-api .
+- Avvia il container:
+    docker run -d -p 8080:8080 --name meteo-api-container meteo-api
+
+al di fuori di docker:
 
 L'applicazione sarà disponibile su http://localhost:8080.
