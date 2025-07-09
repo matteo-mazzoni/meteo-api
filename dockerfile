@@ -5,7 +5,7 @@ FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /app
 
 # Copia il jar già compilato (vedi più avanti il build)
-COPY target/meteo-api-0.0.1-SNAPSHOT.jar app.jar
+COPY target/meteoapi-0.0.1-SNAPSHOT.jar app.jar
 
 # Espone la porta dell'app
 EXPOSE 8080
