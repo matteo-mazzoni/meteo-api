@@ -1,16 +1,80 @@
+/* Stili Generali per il Corpo della Pagina */
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    padding: 40px;
+    font-family: 'Arial', sans-serif; /* Un font leggibile e comune */
+    margin: 0; /* Rimuove il margine predefinito del browser */
+    padding: 20px; /* Aggiunge spazio interno per il contenuto */
+    background-color: #f4f7f6; /* Sfondo leggermente grigio */
+    color: #333; /* Colore del testo principale */
+    display: flex; /* Centra il contenuto verticalmente e orizzontalmente */
+    flex-direction: column; /* Organizza gli elementi in colonna */
+    align-items: center; /* Centra orizzontalmente gli elementi figli */
+    justify-content: center; /* Centra verticalmente gli elementi figli */
+    min-height: 100vh; /* Assicura che il body occupi l'intera altezza della viewport */
+    box-sizing: border-box; /* Include padding e border nel calcolo delle dimensioni */
 }
 
+/* Stili per il Titolo Principale */
 h1 {
-    text-align: center;
-    color: lightblue;
+    color: #2c3e50; /* Un blu scuro per il titolo */
+    margin-bottom: 30px; /* Spazio sotto il titolo */
+    text-align: center; /* Centra il testo del titolo */
+    font-size: 2.2em; /* Dimensione del font più grande */
 }
 
-p {
-    font-size: 1.2em;
-    color: #333;
+/* Stili per il Form */
+form {
+    background-color: #ffffff; /* Sfondo bianco per il form */
+    padding: 30px 40px; /* Spazio interno maggiore per il form */
+    border-radius: 8px; /* Bordi arrotondati */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Leggera ombra per un effetto sollevato */
+    display: flex; /* Organizza gli elementi del form in linea */
+    flex-direction: column; /* Mette gli elementi in colonna */
+    gap: 20px; /* Spazio tra gli elementi del form */
+    width: 100%; /* Larghezza piena */
+    max-width: 400px; /* Larghezza massima per non farlo diventare troppo grande */
+}
+
+/* Stili per il Selettore (Dropdown) */
+select {
+    width: 100%; /* Larghezza completa all'interno del form */
+    padding: 12px 15px; /* Spazio interno */
+    border: 1px solid #ccc; /* Bordo sottile */
+    border-radius: 5px; /* Bordi leggermente arrotondati */
+    font-size: 1.1em; /* Dimensione del font */
+    color: #555; /* Colore del testo */
+    background-color: #fcfcfc; /* Sfondo leggermente più chiaro */
+    appearance: none; /* Rimuove l'aspetto predefinito del sistema operativo */
+    -webkit-appearance: none; /* Per compatibilità con browser basati su WebKit */
+    -moz-appearance: none; /* Per compatibilità con Firefox */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000%22%20d%3D%22M287%2C114.4L154.4%2C247c-2.3%2C2.3-5.3%2C3.6-8.4%2C3.6s-6.1-1.3-8.4-3.6L5.4%2C114.4c-4.7-4.7-4.7-12.3%2C0-17s12.3-4.7%2C17%2C0l132%2C132l132-132c4.7-4.7%2C12.3-4.7%2C17%2C0S291.7%2C109.7%2C287%2C114.4z%22%2F%3E%3C%2Fsvg%3E'); /* Icona a freccia personalizzata */
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 12px;
+}
+
+select:focus {
+    border-color: #007bff; /* Bordo blu quando selezionato */
+    outline: none; /* Rimuove il bordo di focus predefinito */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Ombra leggera */
+}
+
+/* Stili per il Bottone */
+button[type="submit"] {
+    background-color: #007bff; /* Colore primario blu */
+    color: white; /* Testo bianco */
+    padding: 12px 20px; /* Spazio interno */
+    border: none; /* Nessun bordo */
+    border-radius: 5px; /* Bordi arrotondati */
+    cursor: pointer; /* Indica che è cliccabile */
+    font-size: 1.1em; /* Dimensione del font */
+    font-weight: bold; /* Testo in grassetto */
+    transition: background-color 0.3s ease; /* Transizione fluida al passaggio del mouse */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Blu più scuro al passaggio del mouse */
+}
+
+button[type="submit"]:active {
+    background-color: #004085; /* Blu ancora più scuro al click */
 }

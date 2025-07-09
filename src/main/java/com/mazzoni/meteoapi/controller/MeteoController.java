@@ -16,7 +16,7 @@ public class MeteoController {
     @Autowired
     private MeteoService meteoService;
 
-    private static final List<String> CITTA = List.of("Roma", "Milano", "Napoli", "Torino");
+    private static final List<String> CITTA = List.of("Roma", "Milano", "Napoli", "Torino","Firenze", "Venezia","Bologna","Genova", "Palermo","Bari");
 
     // Mostra form per scegliere città
     @GetMapping("/")

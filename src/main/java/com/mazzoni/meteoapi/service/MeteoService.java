@@ -12,11 +12,18 @@ import java.util.Map;
 public class MeteoService {
 
     private static final Map<String, double[]> COORDINATE_CITTA = Map.of(
-            "Roma", new double[]{41.9028, 12.4964},
-            "Milano", new double[]{45.4642, 9.1900},
-            "Napoli", new double[]{40.8518, 14.2681},
-            "Torino", new double[]{45.0703, 7.6869}
-    );
+                "Roma", new double[]{41.9028, 12.4964},
+                "Milano", new double[]{45.4642, 9.1900},
+                "Napoli", new double[]{40.8518, 14.2681},
+                "Torino", new double[]{45.0703, 7.6869},
+                "Firenze", new double[]{43.7696, 11.2558},
+                "Venezia", new double[]{45.4371, 12.3325},
+                "Bologna", new double[]{44.4949, 11.3426},
+                "Genova", new double[]{44.4056, 8.9463},
+                "Palermo", new double[]{38.1157, 13.3615},
+                "Bari", new double[]{41.1171, 16.8719}
+        );
+
 
     private static final String OPEN_METEO_URL = "https://api.open-meteo.com/v1/forecast";
 
