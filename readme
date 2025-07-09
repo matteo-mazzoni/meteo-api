@@ -1,5 +1,5 @@
 introduzione
-Meteo API è un'applicazione REST sviluppata in Java con Spring Boot che consente di ottenere informazioni meteorologiche in tempo reale a partire dal nome di una città. L'app si interfaccia con il servizio esterno OpenWeatherMap per recuperare i dati meteo aggiornati.
+Meteo API è un'applicazione REST sviluppata in Java con Spring Boot che consente di ottenere informazioni meteorologiche in tempo reale su diverse città italiane. L'app si interfaccia con il servizio esterno OpenWeatherMap per recuperare i dati meteo aggiornati.
 
 Obiettivo
 Questo progetto è stato sviluppato durante l'anno scolastico 2024/2025 degli its ict piemonte, corso BID, durante le ore di laboratorio di Cloud services and containers.
