@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
 <head>
     <title>Meteo per [[${cittaSelezionata}]]</title>
 </head>
 <body>
-    <h1 th:text="'Meteo per ' + ${cittaSelezionata}"></h1>
+    <h1>Meteo per <span th:text="${cittaSelezionata}">Città</span></h1>
 
     <p>Temperatura attuale: <span th:text="${temperatura != null} ? ${temperatura} + '°C' : 'Dati non disponibili'"></span></p>
 

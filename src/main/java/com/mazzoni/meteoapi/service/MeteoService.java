@@ -36,10 +36,9 @@ public class MeteoService {
 
         if (response != null && response.currentWeather != null) {
             Double temperatura = response.currentWeather.temperature;
-            Double temperaturaPercepita = response.currentWeather.apparentTemperature;
-            return new MeteoDto(temperatura, temperaturaPercepita);
+            return new MeteoDto(temperatura);
         }
-        return new MeteoDto(null, null);
+        return new MeteoDto(null);
     }
 
     private static class OpenMeteoResponse {
@@ -50,8 +49,5 @@ public class MeteoService {
     private static class CurrentWeather {
         @JsonProperty("temperature")
         public Double temperature;
-
-        @JsonProperty("apparent_temperature")
-        public Double apparentTemperature;
     }
 }

@@ -27,14 +27,12 @@ public class MeteoController {
 
     // Mostra meteo per la città selezionata
     @GetMapping("/meteo")
-    public String meteo(@RequestParam(name="citta", required=false, defaultValue="Roma") String citta,
-                       Model model) {
+    public String meteo(@RequestParam(name="citta", required=false, defaultValue="Roma") String citta, Model model) {
         model.addAttribute("cittaDisponibili", CITTA);
         model.addAttribute("cittaSelezionata", citta);
 
         MeteoDto meteo = meteoService.getMeteoPerCitta(citta);
         model.addAttribute("temperatura", meteo.getTemperatura());
-        model.addAttribute("percepita", meteo.getTemperaturaPercepita());
 
         return "meteo";
     }

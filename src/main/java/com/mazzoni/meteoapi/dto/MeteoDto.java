@@ -7,9 +7,8 @@ public class MeteoDto {
     public MeteoDto() {
     }
 
-    public MeteoDto(Double temperatura, Double temperaturaPercepita) {
+    public MeteoDto(Double temperatura) {
         this.temperatura = temperatura;
-        this.temperaturaPercepita = temperaturaPercepita;
     }
 
     public Double getTemperatura() {
