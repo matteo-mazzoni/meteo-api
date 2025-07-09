@@ -13,7 +13,7 @@ Tecnologie utilizzate
 - RESTful API per l’esposizione dei dati in formato JSON
 
 Configurazione
-- Clona il progetto
+- Clona il progetto: https://github.com/matteo-mazzoni/meteo-api
 - Avvia l'applicazione: mvn spring-boot:run
 - Compila l'applicazione: mvnw clean package
 
