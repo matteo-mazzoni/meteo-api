@@ -15,4 +15,6 @@ Tecnologie utilizzate
 Configurazione
 - Clona il progetto
 - Avvia l'applicazione: mvn spring-boot:run
+- Compila l'applicazione: mvnw clean package
+
 L'applicazione sarà disponibile su http://localhost:8080.
