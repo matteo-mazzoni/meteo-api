@@ -13,8 +13,6 @@ Tecnologie utilizzate
 - RESTful API per l’esposizione dei dati in formato JSON
 
 Configurazione
-- Configura la tua API Key:
-  - Aggiungi la tua API key nel file application.properties: openweathermap.api.key=LA_TUA_API_KEY
-  - Oppure esportala come variabile d'ambiente (opzionale): export OPENWEATHERMAP_API_KEY=LA_TUA_API_KEY
+- Clona il progetto
 - Avvia l'applicazione: mvn spring-boot:run
 L'applicazione sarà disponibile su http://localhost:8080.
