@@ -5,12 +5,16 @@ Obiettivo
 Questo progetto è stato sviluppato durante l'anno scolastico 2024/2025 degli its ict piemonte, corso BID, durante le ore di laboratorio di Cloud services and containers.
 
 Tecnologie utilizzate
--Java 17
--Spring Boot (Spring Web, Spring Context)
--Maven come sistema di build
--Lombok per la riduzione del boilerplate
--OpenWeatherMap API per il recupero delle informazioni meteorologiche
--RESTful API per l’esposizione dei dati in formato JSON
+- Java 17
+- Spring Boot (Spring Web, Spring Context)
+- Maven come sistema di build
+- Lombok per la riduzione del boilerplate
+- OpenWeatherMap API per il recupero delle informazioni meteorologiche
+- RESTful API per l’esposizione dei dati in formato JSON
 
 Configurazione
-Per eseguire l'applicazione è necessario ottenere una API key da OpenWeatherMap e inserirla nel file application.properties. Il progetto può essere avviato in locale tramite Maven.
+- Configura la tua API Key:
+  - Aggiungi la tua API key nel file application.properties: openweathermap.api.key=LA_TUA_API_KEY
+  - Oppure esportala come variabile d'ambiente (opzionale): export OPENWEATHERMAP_API_KEY=LA_TUA_API_KEY
+- Avvia l'applicazione: mvn spring-boot:run
+L'applicazione sarà disponibile su http://localhost:8080.
