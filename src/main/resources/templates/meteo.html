@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
-    <!-- File: src/main/resources/templates/index.html -->
 <head>
     <title>Meteo per [[${cittaSelezionata}]]</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
 </head>
 <body>
     <h1>Meteo per <span th:text="${cittaSelezionata}">Città</span></h1>
