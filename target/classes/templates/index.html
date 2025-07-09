@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+<head>
+    <title>Scegli Città</title>
+</head>
+<body>
+    <h1>Scegli la città</h1>
+    <form action="/meteo" method="get">
+        <select name="citta">
+            <option th:each="c : ${cittaDisponibili}"
+                    th:value="${c}"
+                    th:text="${c}">
+            </option>
+        </select>
+        <button type="submit">Mostra Meteo</button>
+    </form>
+</body>
+</html>

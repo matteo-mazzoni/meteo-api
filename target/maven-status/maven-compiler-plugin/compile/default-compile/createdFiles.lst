@@ -1,0 +1,6 @@
+com\mazzoni\meteoapi\controller\MeteoController.class
+com\mazzoni\meteoapi\service\MeteoService$CurrentWeather.class
+com\mazzoni\meteoapi\dto\MeteoDto.class
+com\mazzoni\meteoapi\MeteoapiApplication.class
+com\mazzoni\meteoapi\service\MeteoService.class
+com\mazzoni\meteoapi\service\MeteoService$OpenMeteoResponse.class
